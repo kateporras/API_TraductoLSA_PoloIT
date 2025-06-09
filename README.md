@@ -1,7 +1,8 @@
 # API_TraductoLSA_PoloIT
 # Traductor de Lengua de Señas en Video
 
-Es una API que recibe un mensaje de texto o un archivo de audio(.mp3), procesa el contenido, y devuelve un video `.mp4` que muestra el mensaje traducido a **lenguaje de señas**. Ideal para aplicaciones de accesibilidad, integración con sitios web y herramientas de comunicación inclusiva.
+Es una API que recibe un mensaje de texto o un archivo de audio(.mp3), procesa el contenido, y devuelve un video `.mp4` que muestra el mensaje traducido a `lenguaje de señas`. Ideal para aplicaciones de accesibilidad, integración con sitios web y herramientas de comunicación inclusiva.
+
 ---
 
 ## Funcionalidades
