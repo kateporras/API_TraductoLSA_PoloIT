@@ -1,9 +1,7 @@
 # API_TraductoLSA_PoloIT
 # Traductor de Lengua de Señas en Video
 
-Es una API que recibe un mensaje de texto o un archivo de audio(.mp3), procesa el contenido, y devuelve un video `.mp4` que muestra el mensaje traducido a **lenguaje de señas**.
-
-Ideal para aplicaciones de accesibilidad, integración con sitios web y herramientas de comunicación inclusiva.
+Es una API que recibe un mensaje de texto o un archivo de audio(.mp3), procesa el contenido, y devuelve un video `.mp4` que muestra el mensaje traducido a **lenguaje de señas**. Ideal para aplicaciones de accesibilidad, integración con sitios web y herramientas de comunicación inclusiva.
 ---
 
 ## Funcionalidades
@@ -28,7 +26,7 @@ Ideal para aplicaciones de accesibilidad, integración con sitios web y herramie
 ```bash
 docker build -t traductor .
 ```
----
+
 ### Ejecutar el contenedor
  
 ```bash
@@ -51,15 +49,15 @@ docker run --name traductor-back -p 8000:8000 traductor
 - ***Codigo:** `200 OK`
 - **Body:** archivo `.mp4` (video con la traduccion en LSA)
 
----
+
 
 ### Endpoint 2: Traduccion de Audio a Video
 
 **POST** `http://localhost:8000/traducirAudio`
 #### Request (body `form-data`)
 
-| Key            | Value                            | 
-|----------------|----------------------------------|
+| Key   |Type    | Value                            | 
+|-------|--------|----------------------------------|
 | file  |**File**| (subir archivo `.mp3`)           |
 #### Response:
 
