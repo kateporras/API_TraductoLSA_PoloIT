@@ -17,8 +17,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 #Instalar las dependencias de python
+
 RUN pip install --upgrade pip \
-    && pip install --disable-pip-version-check  -r requirements.txt
+    && pip install --disable-pip-version-check --default-timeout=100 --retries=10 -r requirements.txt
 
 #Descargamos modelo spacy en espaniol
 RUN python -m spacy download es_core_news_sm
@@ -33,4 +34,3 @@ EXPOSE 8000
 
 #Comando para ejecutar la app con uvicorn
 CMD [ "uvicorn","app.main:app","--host","0.0.0.0","--port","8000" ]
-
