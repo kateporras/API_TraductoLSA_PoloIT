@@ -10,7 +10,7 @@ app= FastAPI()
 # permisos para el front React
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],#"http://localhost:<num>" va el dominio del front
+    allow_origins=["http://localhost:8080", "http://3.149.133.67:8080"],#"http://localhost:<num>" va el dominio del front
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
