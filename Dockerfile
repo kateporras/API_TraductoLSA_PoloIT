@@ -29,6 +29,9 @@ RUN python -c "import whisper; whisper.load_model('base')"
 #Copiar el resto del codigo al contenedor
 COPY . .
 
+#Crear carpeta output
+RUN mkdir -p /app/output
+
 #Exponer el puerto de FastAPI(por defecto)
 EXPOSE 8000
 
